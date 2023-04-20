@@ -1,0 +1,444 @@
+
+.main-body{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.main-img{
+    width: 40%;
+    position: fixed;
+}
+
+.main-img img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.content{
+    width: 56%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 20px;
+}
+
+/* <!-- --- HEADER --- --> */
+
+.header{
+    text-align: center;
+    margin: 153px auto 80px auto;
+}
+
+.name-header{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.job-header{
+
+}
+
+.download-button{
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    background-color: var(--button-color);
+}
+
+.header-button{
+    margin-top: 16px;
+}
+
+
+.download-button:hover,
+.send-message:hover{
+    cursor: pointer;
+    background-color: var(--button-hover-color);
+}
+
+/* <!-- ---MAIN--- --> */
+
+/* <!-- ---my por--- --> */
+
+.my-por{
+    width: 100%;
+}
+
+.my-por__tittle{
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.my-por__img{
+    margin-top: 20px;
+    height: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    gap:  12px;
+}
+
+.my-por__img img{
+    max-width: 49%;
+    object-fit: contain;
+}
+
+/* <!-- ---about--- --> */
+
+.about-header{
+    font-size: 30px;
+    font-weight: 200;
+    color: var(--text-color);
+}
+
+.about hr{
+    margin: 25px 0 15px;
+}
+
+.about-content{
+    text-align: justify;
+}
+
+/* <!-- --my skills--- --> */
+
+.my-skills{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-skills__header{
+    font-size: 30px;
+    font-weight: 200;
+    color: var(--text-color);
+}
+
+.my-skills__chart{
+    margin-top: 20px;
+}
+
+.my-skills__chart div{
+    margin: 10px 0;
+}
+
+.char-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 40px;
+}
+
+.char-items__data{
+    width: var(--percent-data);
+    height: 40px;
+    background-color: var(--datachart-color);
+    animation: growth1 ease-in 1s;
+}
+
+@keyframes growth1 {
+    from {
+        opacity: 0;
+        width: calc(var(--percent-data) - 50%);
+    }
+    to {
+        opacity: 1;
+        width: var(--percent-data);
+    }
+}
+
+.char-items__back{
+    width: var(--percent-back);
+    animation: growth2 ease-in 1s;
+}
+
+@keyframes growth2 {
+    from {
+        opacity: 0;
+        width: calc(var(--percent-back) - 50%);
+    }
+    to {
+        opacity: 1;
+        width: var(--percent-back);
+    }
+}
+
+.char-items__back{
+    width: var(--percent-back);
+    height: 40px;
+    background-color: var(--basechart-color);
+}
+
+.my-skill__number{
+    width: 100%;
+    height: 100px;
+    margin-top: 40px;
+    background-color: var(--datachart-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.my-skill__part{
+    width: 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--background-color);
+}
+
+.my-skill__part:hover{
+    cursor: pointer;
+}
+
+.skill-button{
+    margin-top: 20px;
+}
+
+/* <!-- --my reputation--- --> */
+
+.reputation{
+    margin-top: 20px;   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rep-header{
+    font-size: 30px;
+    font-weight: 200;
+    color: var(--text-color);
+}
+
+.rep_nember{
+    width: 100%;
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}   
+
+.member{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.member img{
+    width: 90px;   
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50% 50%;
+}
+
+.member-contact{
+    margin-top: 1px;
+    font-size: 20px;
+    line-height: 40px;
+    color: var(--text-color);
+}
+
+.member-contact p span{
+    font-weight: 400;
+    font-size: 25px;
+    color: black;
+}
+
+/* <!-- --my price--- --> */
+
+.my-price{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.my-price__header{
+    font-size: 30px;
+    font-weight: 200;
+    color: var(--text-color);
+}
+
+.my-price__table{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, td, th{
+    border: 1px solid var(--boder-color);
+}
+
+th{
+    height: 75px;
+    font-size: 25px;
+    font-weight: 200;
+    color: var(--background-color);
+}
+
+.basic-header{
+    background-color: var(--basic-color);
+}
+
+.pro-header{
+    background-color: var(--pro-color);
+}
+
+tr{
+    height: 50px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+tr span{
+    font-size: 30px;
+    color: black;
+}
+
+.table-date{
+    height: 120px;
+}
+
+.table-signup{
+    height: 100px;
+}
+
+.table-button__name{
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+}
+
+.table-button__name:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+/* <!-- --my contact--- --> */
+
+.contact{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.contact-header{
+    font-size: 30px;
+    font-weight: 200;
+    color: var(--text-color);
+}
+
+.list-contact{
+    margin-top: 20px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list-contact li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.address i,
+.phone i,
+.mail i{
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+.address p,
+.phone p,
+.mail p{
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.map{
+    width: 100%;
+}
+
+.map{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.information{
+    margin-top: 30px;
+
+}
+
+.input-infor_header{
+    color: var(--text-color);
+}
+
+.input-infor{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:  17px;
+}
+
+.input-infor input{
+    height: 50px;
+    width: 100%;
+}
+
+.send-message{
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    background-color: var(--button-color);
+}
+
+/* <!-- --footer--- --> */
+
+.footer{
+    width: 100%;
+    height: 250px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--footer-color);
+    
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    justify-content: center;
+}
+
+.icon i{
+    font-size: 25px;
+    color: var(--icon-color);
+}
+
+.icon i:hover{
+    color: var(--icon-hover-color);
+    cursor: pointer;
+}
+
+.footer p{
+    text-align: center;
+}
